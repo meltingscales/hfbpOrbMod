@@ -1,14 +1,14 @@
-package com.henryfbp.tutorial;
+package com.henryfbp.hfbpOrbMod;
 
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraftforge.common.config.Configuration;
 
-import com.henryfbp.tutorial.blocks.ModBlocks;
-import com.henryfbp.tutorial.items.ModItems;
-import com.henryfbp.tutorial.lib.Recipes;
-import com.henryfbp.tutorial.world.ModWorldGen;
+import com.henryfbp.hfbpOrbMod.blocks.ModBlocks;
+import com.henryfbp.hfbpOrbMod.items.ModItems;
+import com.henryfbp.hfbpOrbMod.lib.Recipes;
+import com.henryfbp.hfbpOrbMod.world.ModWorldGen;
 
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.event.FMLInitializationEvent;

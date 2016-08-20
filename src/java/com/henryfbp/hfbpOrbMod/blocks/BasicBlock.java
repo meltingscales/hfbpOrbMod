@@ -1,6 +1,6 @@
-package com.henryfbp.tutorial.blocks;
+package com.henryfbp.hfbpOrbMod.blocks;
 
-import com.henryfbp.tutorial.Main;
+import com.henryfbp.hfbpOrbMod.Main;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

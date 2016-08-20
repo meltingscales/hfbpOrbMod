@@ -1,11 +1,11 @@
-package com.henryfbp.tutorial.world;
+package com.henryfbp.hfbpOrbMod.world;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import com.henryfbp.tutorial.blocks.ModBlockMultiOre;
-import com.henryfbp.tutorial.blocks.ModBlocks;
-import com.henryfbp.tutorial.lib.HelperFunctions;
+import com.henryfbp.hfbpOrbMod.blocks.ModBlockMultiOre;
+import com.henryfbp.hfbpOrbMod.blocks.ModBlocks;
+import com.henryfbp.hfbpOrbMod.lib.HelperFunctions;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
@@ -80,8 +80,10 @@ public class ModWorldGen implements IWorldGenerator
 			this.runGenerator(this.gen_tutorial_ore, world, random, chunkX, chunkZ, 20, 0, 64);
 			this.runGenerator(this.gen_multi_ore, world, random, chunkX, chunkZ, 10, 0, 32);
 			
-			this.runSphereGenerator(ModBlocks.tutorialBlock, world, random, 5, 1.2, chunkX, chunkZ, 1, 100, 200);
-			
+			if(random.nextInt(100) <= 10)
+			{
+				this.runSphereGenerator(ModBlocks.tutorialBlock, world, random, 5, 1.2, chunkX, chunkZ, 1, 100, 100);
+			}
 			
 			break;
 		

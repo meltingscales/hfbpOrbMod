@@ -1,6 +1,6 @@
-package com.henryfbp.tutorial.items;
+package com.henryfbp.hfbpOrbMod.items;
 
-import com.henryfbp.tutorial.Main;
+import com.henryfbp.hfbpOrbMod.Main;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;

@@ -1,7 +1,7 @@
-package com.henryfbp.tutorial.lib;
+package com.henryfbp.hfbpOrbMod.lib;
 
-import com.henryfbp.tutorial.blocks.ModBlocks;
-import com.henryfbp.tutorial.items.ModItems;
+import com.henryfbp.hfbpOrbMod.blocks.ModBlocks;
+import com.henryfbp.hfbpOrbMod.items.ModItems;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -14,9 +14,22 @@ public class Recipes
 {
 	public static void initShapedRecipes()
 	{
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.tutorialBlock), new Object[]{ //2x2 tut item gives tut block
-			"DD",
-			"DD", 'D', ModItems.tutorialItem});
+		
+		if(!Configuration.cheapRecipe){
+			GameRegistry.addRecipe(new ItemStack(ModBlocks.tutorialBlock), new Object[]{ //2x2 tut item gives tut block
+				"DDD",
+				"DPD",
+				"DDD", 'D', ModItems.tutorialItem,
+					   'P', Items.apple});}
+		else{
+			GameRegistry.addRecipe(new ItemStack(ModBlocks.tutorialBlock), new Object[]{
+				"DD",
+				"DD", 'D', ModItems.tutorialItem});}
+		
+		
+		
+		
+		
 	}
 	
 	public static void initShapelessRecipes()

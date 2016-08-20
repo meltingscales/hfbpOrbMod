@@ -1,9 +1,14 @@
+crash-reports/*
 logs/*
 saves/*
 resourcepacks/*
 world/*
-config/*
 .settings/*
+
+
+config/forge.cfg
+config/forgeChunkLoading.cfg
+splash.properties
 usercache.json
 usernamecache.json
 whitelist.json
@@ -77,3 +82,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/bin/

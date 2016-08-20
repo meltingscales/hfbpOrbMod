@@ -1,4 +1,4 @@
-package com.henryfbp.tutorial;
+package com.henryfbp.hfbpOrbMod;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;

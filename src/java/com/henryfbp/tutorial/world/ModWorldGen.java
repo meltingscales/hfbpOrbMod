@@ -58,7 +58,7 @@ public class ModWorldGen implements IWorldGenerator
 			int y = minHeight + random.nextInt(heightDiff);
 			int z = chunkZ * 16 + random.nextInt(16);
 			
-			ArrayList<Integer[]> sphereOffsets = HelperFunctions.generateOffsetSphereEigth(radius, radiusAllowance);
+			ArrayList<Integer[]> sphereOffsets = HelperFunctions.generateOffsetSphere(radius, radiusAllowance);
 			
 			world.setBlock(x, y, z, Blocks.obsidian); //for testing purposes
 			

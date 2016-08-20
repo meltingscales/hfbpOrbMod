@@ -1,5 +1,7 @@
 package com.henryfbp.tutorial;
 
+import com.henryfbp.tutorial.lib.Recipes;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -19,26 +21,33 @@ public class Main
         
     @SidedProxy(clientSide="com.henryfbp.tutorial.ClientProxy", serverSide="com.henryfbp.tutorial.ServerProxy")
     public static CommonProxy proxy;
+    public static ClientProxy cproxy;
+    public static ServerProxy sproxy;
+    
+    public static Configuration config;
     
     @Instance
     public static Main instance = new Main();
         
      
     @EventHandler
-    public void preInit(FMLPreInitializationEvent e)
+    public void preInit(FMLPreInitializationEvent event)
     {
-    	proxy.preInit(e);
+    	proxy.preInit(event);
+    	Recipes.initShapedRecipes();
+    	Recipes.initShapelessRecipes();
+    	Recipes.initSmeltingRecipes();
     }
         
     @EventHandler
-    public void init(FMLInitializationEvent e)
+    public void init(FMLInitializationEvent event)
     {
-    	proxy.init(e);
+    	proxy.init(event);
     }
         
     @EventHandler
-    public void postInit(FMLPostInitializationEvent e)
+    public void postInit(FMLPostInitializationEvent event)
     {
-    	proxy.postInit(e);
+    	proxy.postInit(event);
     }
 }

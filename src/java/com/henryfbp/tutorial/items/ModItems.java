@@ -1,4 +1,4 @@
-package com.henryfbp.tutorial.item;
+package com.henryfbp.tutorial.items;
 
 import com.henryfbp.tutorial.Main;
 

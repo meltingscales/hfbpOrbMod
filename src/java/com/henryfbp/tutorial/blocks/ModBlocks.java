@@ -1,4 +1,4 @@
-package com.henryfbp.tutorial.block;
+package com.henryfbp.tutorial.blocks;
 
 import com.henryfbp.tutorial.item.ModItems;
 

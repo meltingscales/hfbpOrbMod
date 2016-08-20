@@ -4,7 +4,7 @@ package com.henryfbp.tutorial;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-import com.henryfbp.tutorial.block.ModBlocks;
+import com.henryfbp.tutorial.blocks.ModBlocks;
 import com.henryfbp.tutorial.item.ModItems;
 import com.henryfbp.tutorial.world.ModWorldGen;
 

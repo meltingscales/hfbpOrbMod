@@ -3,9 +3,9 @@ package com.henryfbp.tutorial.world;
 import java.util.ArrayList;
 import java.util.Random;
 
-import com.henryfbp.tutorial.block.ModBlockMultiOre;
-import com.henryfbp.tutorial.block.ModBlocks;
-import com.henryfbp.tutorial.helpers.HelperFunctions;
+import com.henryfbp.tutorial.blocks.ModBlockMultiOre;
+import com.henryfbp.tutorial.blocks.ModBlocks;
+import com.henryfbp.tutorial.lib.HelperFunctions;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
@@ -62,9 +62,9 @@ public class ModWorldGen implements IWorldGenerator
 			
 			world.setBlock(x, y, z, Blocks.obsidian); //for testing purposes
 			
-			for(int i1 = 0; i1 < sphereOffsets.size(); i1++)
+			for(int j = 0; j < sphereOffsets.size(); j++)
 			{
-				world.setBlock(sphereOffsets.get(i1)[0]+x, sphereOffsets.get(i1)[1]+y, sphereOffsets.get(i1)[2]+z, block);
+				world.setBlock(sphereOffsets.get(j)[0]+x, sphereOffsets.get(j)[1]+y, sphereOffsets.get(j)[2]+z, block); //sets blocks into offsets from an (	x,y,z)
 			}
 			
 		}
@@ -77,8 +77,8 @@ public class ModWorldGen implements IWorldGenerator
 		switch (world.provider.dimensionId)
 		{
 		case 0: //Overworld
-			//this.runGenerator(this.gen_tutorial_ore, world, random, chunkX, chunkZ, 20, 0, 64);
-			//this.runGenerator(this.gen_multi_ore, world, random, chunkX, chunkZ, 10, 0, 32);
+			this.runGenerator(this.gen_tutorial_ore, world, random, chunkX, chunkZ, 20, 0, 64);
+			this.runGenerator(this.gen_multi_ore, world, random, chunkX, chunkZ, 10, 0, 32);
 			
 			this.runSphereGenerator(ModBlocks.tutorialBlock, world, random, 5, 1.2, chunkX, chunkZ, 1, 100, 200);
 			

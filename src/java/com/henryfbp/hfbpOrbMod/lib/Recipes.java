@@ -15,7 +15,7 @@ public class Recipes
 	public static void initShapedRecipes()
 	{
 		
-		if(!Configuration.cheapRecipe){
+		if(!ModConfiguration.cheapRecipe){
 			GameRegistry.addRecipe(new ItemStack(ModBlocks.tutorialBlock), new Object[]{ //2x2 tut item gives tut block
 				"DDD",
 				"DPD",

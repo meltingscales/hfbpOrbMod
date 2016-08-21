@@ -4,7 +4,7 @@ import com.henryfbp.hfbpOrbMod.Main;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 
-public class Configuration
+public class ModConfiguration
 {
 	
 	public static 		boolean cheapRecipe;

@@ -1,5 +1,6 @@
 package com.henryfbp.hfbpOrbMod;
 
+import com.henryfbp.hfbpOrbMod.lib.ModConfiguration;
 import com.henryfbp.hfbpOrbMod.lib.Recipes;
 
 import cpw.mods.fml.client.event.ConfigChangedEvent;
@@ -47,7 +48,7 @@ public class Main
     	Recipes.initSmeltingRecipes();
     	
     	config = new Configuration(event.getSuggestedConfigurationFile());
-    	com.henryfbp.hfbpOrbMod.lib.Configuration.syncConfig();
+    	ModConfiguration.syncConfig();
     }
     
     @SubscribeEvent
@@ -55,7 +56,7 @@ public class Main
     {
     	if(event.modID.equals(Main.MODID))
     	{
-    		com.henryfbp.hfbpOrbMod.lib.Configuration.syncConfig();
+    		ModConfiguration.syncConfig();
     	}
     }
         

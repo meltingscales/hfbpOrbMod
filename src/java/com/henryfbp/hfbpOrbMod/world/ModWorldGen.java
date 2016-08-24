@@ -23,8 +23,8 @@ public class ModWorldGen implements IWorldGenerator
 	
 	public ModWorldGen()
 	{
-		this.gen_tutorial_ore = new WorldGenMinable(ModBlocks.tutorial_ore, 8);
-		this.gen_multi_ore = new WorldGenMinable(ModBlocks.tutorial_multi_ore, 4);
+		this.gen_tutorial_ore = new WorldGenMinable(ModBlocks.tutorialOre, 8);
+		this.gen_multi_ore = new WorldGenMinable(ModBlocks.tutorialMultiOre, 4);
 		this.gen_cobblestone = new WorldGenMinable(Blocks.cobblestone, 16, Blocks.end_stone);
 	}
 	

@@ -22,7 +22,7 @@ public class Main
 
     public static final String MODID = "hfbpOrbMod";
     public static final String MODNAME = "HenryFBPOrbMod";
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "1.7.10.1";
         
     @SidedProxy(clientSide="com.henryfbp." + MODID + ".ClientProxy", serverSide="com.henryfbp." + MODID + ".ServerProxy")
     public static CommonProxy proxy;

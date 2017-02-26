@@ -5,8 +5,6 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
-import scala.Function;
-
 public class HelperFunctions
 {
 	

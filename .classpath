@@ -3,7 +3,8 @@
 	<classpathentry excluding="java/|resources/" kind="src" path="src"/>
 	<classpathentry kind="src" path="src/java"/>
 	<classpathentry kind="src" path="src/resources"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/forge-1.7.10-10.13.4.1558-1.7.10-src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Henry_000/SyncThing/CODING/Minecraft/forge-1.7.10-10.13.4.1558-1.7.10-src/src"/>
+	<classpathentry exported="true" kind="src" path="/forge-1.7.10-10.13.4.1558-1.7.10-src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
